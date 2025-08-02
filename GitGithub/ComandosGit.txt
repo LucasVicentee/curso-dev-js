@@ -1,0 +1,17 @@
+Atividade 1:
+git init
+git config --global user.name "LucasVicentee"
+git config --global user.email "lh201612@gmail.com"
+
+Atividade Atividade 3: 
+git checkout melhorias-estrutura
+git add .
+git commit -m 
+git push
+git merge melhorias-estrutura
+
+Atividade 4:
+git clone 
+git add .
+git commit -m
+git push
