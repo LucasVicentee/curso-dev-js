@@ -1,1 +1,1 @@
-# Este repositório será inicializado e utilizado apenas para a didática do curso de Java Script do SENAI
+# Este repositório será inicializado e utilizado apenas para a didática do curso de JavaScript do SENAI

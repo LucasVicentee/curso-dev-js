@@ -1,0 +1,231 @@
+
+U:\Users\48685797896\Desktop>mkdir projeto_responsivo
+
+U:\Users\48685797896\Desktop>cd projeto_responsivo
+
+U:\Users\48685797896\Desktop\projeto_responsivo>mkdir public
+
+U:\Users\48685797896\Desktop\projeto_responsivo>mkdir src
+
+U:\Users\48685797896\Desktop\projeto_responsivo>mkdir docs
+
+U:\Users\48685797896\Desktop\projeto_responsivo>cd public
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>mkdir html
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>mkdir css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>mkdir js
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>mkdir media
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd media
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\media>tree
+Listagem de caminhos de pasta para o volume Users
+O número de série do volume é E650-F89A
+U:.
+Não existem subpastas
+
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\media>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd html
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\html>echo home.html > Projeto Responsivo
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\html>rename Projeto home.html
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\html>echo Projeto Responsivo > home.html
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\html>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>echo body { margin: 0; padding: 0; background-color: lightgray; } yheme.css
+body { margin: 0; padding: 0; background-color: lightgray; } yheme.css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>tree
+Listagem de caminhos de pasta para o volume Users
+O número de série do volume é E650-F89A
+U:.
+Não existem subpastas
+
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>dir
+ O volume na unidade U é Users
+ O Número de Série do Volume é E650-F89A
+
+ Pasta de U:\Users\48685797896\Desktop\projeto_responsivo\public\css
+
+26/07/2025  09:09    <DIR>          .
+26/07/2025  09:09    <DIR>          ..
+               0 arquivo(s)              0 bytes
+               2 pasta(s)   845.302.996.992 bytes disponíveis
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>cs yheme.css
+'cs' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>echo body { margin: 0; padding: 0; background-color: lightgray; } theme.css
+body { margin: 0; padding: 0; background-color: lightgray; } theme.css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>echo body { margin: 0; padding: 0; background-color: lightgray; } > theme.css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd media
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\media>mkdir imagens
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\media>mkdir fontes
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\media>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>move theme.css docs
+O sistema não pode encontrar o arquivo especificado.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>move theme.css docs
+        1 arquivo(s) movido(s).
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>rmdir docs
+O nome do diretório é inválido.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>rmdir docs.css
+O sistema não pode encontrar o arquivo especificado.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>rmdir docs
+O nome do diretório é inválido.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>rmdir docs.html
+O sistema não pode encontrar o arquivo especificado.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>rmdir docs.htmldir
+O sistema não pode encontrar o arquivo especificado.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>dir]
+ O volume na unidade U é Users
+ O Número de Série do Volume é E650-F89A
+
+ Pasta de U:\Users\48685797896\Desktop\projeto_responsivo\public\css
+
+Arquivo não encontrado
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>dir
+ O volume na unidade U é Users
+ O Número de Série do Volume é E650-F89A
+
+ Pasta de U:\Users\48685797896\Desktop\projeto_responsivo\public\css
+
+26/07/2025  09:23    <DIR>          .
+26/07/2025  09:09    <DIR>          ..
+26/07/2025  09:21                63 docs
+               1 arquivo(s)             63 bytes
+               2 pasta(s)   845.282.197.504 bytes disponíveis
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>del docs
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>echo body { margin: 0; padding: 0; background-color: lightgray; } > theme.css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>move theme.css docs/
+O sistema não pode encontrar o caminho especificado.
+        0 arquivo(s) movido(s).
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>docs
+'docs' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo>docs
+'docs' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+U:\Users\48685797896\Desktop\projeto_responsivo>cd docs
+
+U:\Users\48685797896\Desktop\projeto_responsivo\docs>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo>cd public
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>move theme.css \projeto_responsivo\docs
+O sistema não pode encontrar o caminho especificado.
+        0 arquivo(s) movido(s).
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>move theme.css cd.. projeto_responsivo\docs
+A sintaxe do comando está incorreta.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>move theme.css cd.. docs
+A sintaxe do comando está incorreta.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>move theme.css ..\..\docs
+        1 arquivo(s) movido(s).
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\css>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd js
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\js>echo console.log("Site responsivo pronto!"); > responsivo.js
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\js>echo console.log("Site responsivo pronto!"); > utils.js
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\js>del utils.js
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\js>echo console.log("Utilitários carregados!"); > utils.js
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\js>rename utils.js helpers.js
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\js>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>tree
+Listagem de caminhos de pasta para o volume Users
+O número de série do volume é E650-F89A
+U:.
+├───css
+├───html
+├───js
+└───media
+    ├───fontes
+    └───imagens
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo>docs
+'docs' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+U:\Users\48685797896\Desktop\projeto_responsivo>cd docs
+
+U:\Users\48685797896\Desktop\projeto_responsivo\docs>del theme.css
+
+U:\Users\48685797896\Desktop\projeto_responsivo\docs>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo>cd public
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd home
+O sistema não pode encontrar o caminho especificado.
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd html
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\html>notepad home.html
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public\html>cd ..
+
+U:\Users\48685797896\Desktop\projeto_responsivo\public>cd..
+
+U:\Users\48685797896\Desktop\projeto_responsivo>cd..
+
+U:\Users\48685797896\Desktop>echo Comandos CMD.txt
+Comandos CMD.txt
+
+U:\Users\48685797896\Desktop>echo Comandos CMD > tarefa.txt
+
+U:\Users\48685797896\Desktop>echo 1.
+1.
+
+U:\Users\48685797896\Desktop>echo 1 -
