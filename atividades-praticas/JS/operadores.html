@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores matemáticos em JavaScript</title>
+</head>
+<body>
+    <p>Aperte F12 para ver o resultado!</p>
+
+    <script>
+        // Inicio das Variaveis
+
+        // Exemplo var
+
+        var exemploVar = "Lucas";
+        var exemploVar = "Senai";
+        exemploVar = "11111"
+
+        console.log(exemploVar);
+
+        // Exemplo let
+
+        let exemploLet = "Prudente";
+        exemploLet = "Regente";
+        console.log(exemploLet);
+
+        let exemploLet2 = "11111111";
+
+        // Exemplo const
+
+        const exemploConst = "Setembro";
+        const exemploConst2 = "Outubro"
+        // exemploConst = "Lucas"; Dá erro, pois o Const não permite a troca dos valores
+
+        // Final das Variaveis
+
+        // inicio dos tipos de dados
+
+        // String
+        const nome = "Lucas Henrique";
+        const sobrenome = 'Vicente dos Santos';
+        const multiplasLinhas = `
+        Primeira linha
+        Segunda linha
+        Terceira linha`;
+
+        console.log(nome, "-" ,sobrenome); // Tem um pequeno espaço por padrão
+
+        console.log(nome + "-" + sobrenome); // Não tem um pequeno espaço como padrão 
+
+        // Mistura de váriavéis com texto normal 
+        console.log(`${nome} - ${sobrenome}`);
+
+        // Number (Inteiros e Decimais)
+        const idade = 18;
+        const altura = 1.80;
+        const temperatura = -10;
+        
+        console.log(idade);
+
+
+        // Booleano (Verdadeiro ou Falso)
+        const ativo = true;
+        const instaivo = false;
+
+        const maiorIdade = idade >= 18;
+        console.log(maiorIdade);
+
+        //Null Undefined
+        const valorNulo = null; // Possuí o valor nulo
+        let valorIndefinido; // Nãp possuí valor
+
+        // Fim dos tipos de dados
+
+        // Inicio dos Operadores Aritiméticos (+, -, /, %, **, --)
+
+        // PEMDAS (Parênteses, Expoentes, Multiplicação/Divisão e Adição/Subtração)
+
+        const a = 15;
+        const b = 5;
+        console.log(`A soma de 15 + 5 é de: ` , a + b);
+        console.log(`A subtração de 15 - 5 é de: ` , a - b);
+        console.log(`A multiplicação de 15 * 5 é de: ` , a * b);
+        console.log(`A divisão de 15 / 5 é de: ` , a / b);
+        console.log(`A divisão de resto de 15 % 5 é de: ` , a % b);
+        console.log(`A elevação numérica de 15 ** 5 é de: ` , a ** b);
+
+        console.log((a + b) / a);
+
+        let contador = 10;
+
+        // Incrementação na variável contador
+        console.log(contador++);
+        console.log(contador);
+        console.log(++contador); // Incrementando antes de imprimir na tela
+
+        //Desementação na váriavel contador
+        console.log(contador--);
+        console.log(contador);
+        console.log(--contador); // Desrementando antes de imprimir na tela
+
+        // Atribuição
+        let num = 10;
+
+        num += 5; // num = num + 5
+        console.log(num);
+
+        num -= 3; // num = num - 3
+        console.log(num);
+
+        num *= 2; // num = num * 2
+        console.log(num);
+
+        num /= 4; // num = num / 4
+        console.log(num);
+
+        // Fim dos Operadores Aritiméticos 
+
+        // inicio operadores de comparação
+
+        const x = 5; 
+        const y = "5";
+        const z = 10;
+
+        console.log(x == y); // Verdadeiro, pois possuem, valores iguais
+
+        console.log(x === y); // Falso, pois apesar dos valores serem iguais a tipagem é diferente, um é um número inteiro e o outro é um número
+
+        console.log(x != y); // Falso, pois os valores são iguais
+
+        console.log(x !== y); // Verdadeiro, pois apesar dos valores serem iguais os tipos são diferentes
+
+        console.log(x > y); // Falso, pois o 5 não é maior que 5
+
+        console.log(z >= x); // Verdadeiro, pois o 10 é maior OU igual a 5
+
+        console.log(x < y); // Falso, pois o 5 é menor que o 5
+
+        console.log(z <= x); // falso, pois o 10 é menor OU igual a 5
+
+        // inicio operadores de comparação
+
+        // inicio poeradores Lógicos (! not, || or, && and)
+
+        const temIdade = true;
+        const temCarteira = true;
+        const temDinheiro = false;
+
+        console.log(!temIdade);
+        console.log(temIdade && temCarteira);
+        console.log(temIdade && temCarteira && temDinheiro);
+        console.log(temIdade || temCarteira || temDinheiro);
+
+        // Fim poeradores Lógicos
+
+        // Inicio das conversões de tipos
+
+        // Conversão implicita
+        console.log("5" + 2); // Concatena, pois o + é sinal de concatenação de texto
+
+        console.log("5" - 2); // Não concatena, pois o - não é sinal de concatenação de texto
+
+        console.log("5" * 2); // Não concatena, pois o * não é sinal de concatenação de texto
+
+        //Conversão explicita
+        const textoNumero = "42.7";
+        console.log(Number(textoNumero));
+
+        console.log(parseInt(textoNumero)); // Conversão para número inteiro 
+
+        console.log(parseFloat(textoNumero)); // Conversão para número decimal
+
+        console.log(parseFloat("42px"));
+
+        // Number -> String
+        const numero = 123.10;
+        console.log(String(numero)); // 1º Forma
+        console.log(numero.toString()); // 2º Forma
+
+        //Bool
+        console.log(Boolean(0));
+        console.log(Boolean(1));
+        console.log(Boolean(""));
+        console.log(Boolean("Lucas"));
+
+        // Inicio das conversões de tipos
+    </script>
+</body>
+</html>
