@@ -86,7 +86,35 @@
             const altura = Number(document.querySelector("#altura").value);
             const imc = peso / (altura ** 2);
             document.querySelector("#resultado_imc").textContent = imc.toFixed(2);
-        })
+
+            let mensagem
+
+            switch (true) {
+                case imc < 18.5:
+                    mensagem = "Abaixo do Peso";
+                    break;
+                case imc <= 18.5 && imc >= 24.9:
+                    mensagem = "Peso Normal";
+                    break;
+                case imc <= 25.0 && imc <= 29.9:
+                    mensagem = "Sobrepeso";
+                    break;
+                case imc >= 30.0 && imc <= 34.9:
+                    mensagem = "Obesidade Grau 1";
+                    break;
+                case imc >= 35.0 && imc <= 39.9:
+                    mensagem = "Obesidade Grau 2";
+                    break;  
+                case imc > 40.0:
+                    mensagem = "Obesidade Grau 3";
+                    break;
+                default:
+                    mensagem = "IMC inválido!";   
+                    break; 
+            }
+
+            document.querySelector("#resultado_imc").textContent = `O seu IMC é: ${imc.toFixed(2)} e a classificação é ${mensagem}`;
+        });
         
     </script>
 
