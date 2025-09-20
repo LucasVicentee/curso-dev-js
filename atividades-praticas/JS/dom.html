@@ -56,9 +56,44 @@
     </div>
 
     <script>
-        // 1
+        // Exemplo 1
 
-        const btnler = document.querySelector
+        const btnler = document.querySelector("#btn-ler");
+        const paragrafoExemplo = document.querySelector("#paragrafo-exemplo");
+
+        function lerTextoParagrafo() {
+            const textoParagrafo = paragrafoExemplo.textContent;
+
+            alert(textoParagrafo);
+            console.log(textoParagrafo);
+        }
+
+        btnler.addEventListener('click', lerTextoParagrafo);
+
+        // Exemplo 2
+
+        const btnMudar = document.querySelector("#btn-mudar");
+        const tituloMudar = document.querySelector("#titulo-para-mudar");
+
+        btnMudar.addEventListener('click', function(){
+            tituloMudar.textContent = "Hoje estou no SENAI";
+        });
+
+        // Exemplo 3
+
+        document.querySelector("#btn-saudacao").addEventListener('click', function() {
+            document.querySelector("#resultado-saudacao").textContent = `Olá ${document.querySelector("#nome-usuario").value}!`;
+        });
+
+        // Exemplo 4
+
+        document.querySelector("#btn-mudar-cor").addEventListener('click', function() {
+            const corEscolhida = document.querySelector("#cor-fundo").value;
+
+            document.body.style.backgroundColor = corEscolhida;
+
+            document.body.classList.remove("bg-light");
+        });
     </script>
 </body>
 </html>
