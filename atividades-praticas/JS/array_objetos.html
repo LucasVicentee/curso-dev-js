@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays de Objetos</title>
+</head>
+<body>
+    <p>Aperte F12 para Exibir</p>
+
+    <script>
+        // Array [] e Objetos {}
+        // Array => Indice 1, 2, 3
+        // Objetos => {Chave : Valor}
+
+        // Array
+
+        const frutas = ["Maça", "Banana", "Laranja", "Uva", "Pera"];
+
+        console.log(frutas);
+
+        // Verificar quantidade de itens
+        console.log("Quantidade de frutas do Array acima: ", frutas.length);
+
+        // Exibir o primeiro item e o último
+        console.log(frutas[0]);
+        console.log(frutas[4]);
+
+        // Sempre acessando o último item do Array
+        console.log(frutas[frutas.length - 1]);
+
+        // Inserir um novo item no Array
+
+        // Inerindo no final do Array
+        frutas.push("Jaca");
+        console.log(frutas);
+
+        // Inserindo no inicio do Array
+        frutas.unshift("Abacaxi");
+        console.log(frutas);
+
+        // Alterar itens dentro do Array
+        frutas[0] = "Morango";
+        console.log(frutas);
+
+        // Excluir itens do Array
+
+        // Excluindo o ultimo item do Array
+        frutas.pop();
+        console.log(frutas);
+
+        // Excluindo o primeiro item do Array
+        frutas.shift();
+        console.log(frutas);
+
+        // O delete deixa a mesma quantidade de itens no Array, porém a posição fica como "Vazio", ou seja, ele apaga o item porém não realoca o resto dos itens dentro do Array
+        delete frutas[1];
+        console.log(frutas);
+
+        // Inserir e excluir itens do Array
+
+        // número 1 representa aonde eu desejo começar a exclusão, número 2 representa a quantidade de remoções desejadas a partir da posição do item desejado que no caso é 1 e o "Limão" é a terceira opção que significa a inserção dos itens que eu desejo inserir
+        frutas.splice(1, 2, "Limão");
+        console.log(frutas);
+
+
+
+
+        // Objetos
+
+        const pessoa = {
+            nome : "Lucas",
+            idade : 21,
+            altura : 1.81,
+            amigos : ["Sabrina", "Victor"]
+        }
+        console.log(pessoa);
+
+        // Mostrando as informações apenas do nome
+        console.log(pessoa.nome);
+        console.log(pessoa['nome']);
+
+        // Mostrando apenas os amigos
+        console.log(pessoa.amigos);
+
+        //Inserir valores
+        pessoa.cidade = "Presidente Prudente";
+        console.log(pessoa);
+
+        // Alterando o valor da cidade
+        pessoa.cidade = "Regente";
+        console.log(pessoa);
+
+        // Excluindo a chave inteira "Cidade"
+        delete pessoa.cidade;
+        console.log(pessoa);
+
+        
+    </script>
+</body>
+</html>

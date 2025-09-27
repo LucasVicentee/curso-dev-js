@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays de Objetos Atividade</title>
+</head>
+<body>
+    <p>Aperte F12 para Exibir</p>
+
+    <script>
+        function exercicio1() {
+
+        // Criação da Playlist
+        const playlist = ["I'am Survivor", "I Never Was There", "Exemplo"];
+        console.log(playlist);
+
+        // Mostrando a primeira música
+        console.log(playlist[0]);
+
+        // Adicionando uma música ao final da Playlist
+        playlist.push("Exemplo2");
+        console.log(playlist);
+
+        // Removendo a ultima muscia adicionada
+        playlist.pop();
+        console.log(playlist);
+
+        // Mostrando o tamanho total da minha Playlist
+        console.log("A quntidade de músicas da minha playlist é de: ", playlist.length);
+        }
+        // exercicio1();
+
+        function exercicio2() {
+
+            // Criação do Objeto
+            const filme = {
+                titulo : "Os incríveis",
+                diretor : "Brad Bird", 
+                ano : 10-12-2004,
+            }
+
+            // Mostrando as informações do filme
+            console.log("O filme", filme.titulo, ", dirigido por ", filme.diretor, "foi lançado em ", filme.ano, ".");
+
+            // Adicionando o Array de personagens
+            filme.personagens = ["Senhor Incrivel", "Flash", "Gelado", "Sindrome", "Gama-Jack", "Violeta", "Mulher Elástica"];
+            console.log(filme);
+
+            // Exibindo o nome do primeiro personagem do meu Array de personagens
+            console.log(filme.personagens[0]);
+
+            // Exeibindo o nome completo do filme
+            console.log(filme.titulo);
+
+        }
+        exercicio2();
+    </script>
+</body>
+</html>
