@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Aperte F12 para Exibir</p>
+
+    <script>
+        const nomes = ["Lucas", "Maria", "josé", "Ana", "Paulo"];
+        const numeros = [10, 20, 30, 40, 50];
+        const alunos = [
+            {nome : "Lucas", nota : 9},
+            {nome : "Maria", nota : 10},
+            {nome : "Pedro", nota : 8.5}
+        ]
+
+        // for (variavel, condicionado, incremento)
+
+        // Usando um valor fixo para condição de parada
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        // Usando o tamanho do Array nomes para a condição de parada
+        for (let i = 1; i <= nomes.length; i++) {
+            console.log(nomes[i]);
+        }
+
+        // While e Do While
+        // while (Enqaunto a condição for Verdadeira) {
+
+        // }
+
+        let x = 1;
+        while (x <= 10) {
+            console.log(x);
+            x++;
+            if (x === 4) {
+                continue;
+            }
+            if (x === 5) {
+                break;
+            }
+        }
+
+        do {
+            console.log(x);
+            x++;
+        } while (x <= 10);
+
+        // Foreach
+
+        nomes.forEach(function(nome){
+            console.log(nome);
+        });
+
+        alunos.forEach(function(aluno){
+            console.log(aluno.nota);
+        });
+
+        //Map
+        // const numeros = [10, 20, 30, 40, 50];
+        // const numeros = [20, 40, 60, 80, 100];
+        const novoArray = [];
+
+        for (let i = 0; i < numeros.length; i++) {
+            novoArray.push(numeros[i] * 2);
+        };
+        console.log(novoArray);
+
+        const array2 = numeros.map(function(numero){
+            return numero * 2;
+        });
+        console.log(array2);
+    </script>
+</body>
+</html>
