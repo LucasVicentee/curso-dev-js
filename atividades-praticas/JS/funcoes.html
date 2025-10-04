@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em JS</title>
+</head>
+<body>
+    <p>Aperte F12 para visualizar</p>
+
+    <script>
+        // Função nomeada sem parâmetros
+        function exercicio1() {
+            // Dentro desta função terá todo o código
+        }
+
+        // Ex:
+        function saudacao() {
+            console.log("Olá mundo!");
+        }
+        // saudacao(); só será funcional caso a função for chamada
+
+
+        // Função com parâmetro
+        function soma(n1, n2) {
+            console.log(n1 + n2);
+        }
+        // soma(5, 3); Resultado = 8
+        // soma(2, 2); Resultado = 4
+
+        // Função com parâmetro utilizando return
+        function somaRetorno(n1, n2) {
+            return n1 + n2;
+        }
+        // const resultado = somaRetorno(4, 2); Resultado = 6
+        // console.log(resultado); passando o valor da soma através de um return
+
+
+        //Função anônima (Já é adicionada diretamente na variável)
+        const subtrair = function(n1, n2) {
+            return n1 - n2;
+        }
+        // subtrair(4, 2); Resultado = 2
+
+
+        // Função anônima => Arrow function
+        const multiplicar = (n1, n2) => {
+            return n1 * n2; // Return explícito
+        }
+        // console.log(multiplicar(3, 3)); Resultado = 9
+    </script>
+</body>
+</html>
