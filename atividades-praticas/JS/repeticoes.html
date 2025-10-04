@@ -21,12 +21,12 @@
 
         // Usando um valor fixo para condição de parada
         for (let i = 1; i <= 10; i++) {
-            console.log(i);
+            // console.log(i);
         }
 
         // Usando o tamanho do Array nomes para a condição de parada
         for (let i = 1; i <= nomes.length; i++) {
-            console.log(nomes[i]);
+            // console.log(nomes[i]);
         }
 
         // While e Do While
@@ -36,7 +36,7 @@
 
         let x = 1;
         while (x <= 10) {
-            console.log(x);
+            // console.log(x);
             x++;
             if (x === 4) {
                 continue;
@@ -47,18 +47,17 @@
         }
 
         do {
-            console.log(x);
+            // console.log(x);
             x++;
         } while (x <= 10);
 
         // Foreach
-
         nomes.forEach(function(nome){
-            console.log(nome);
+            // console.log(nome);
         });
 
         alunos.forEach(function(aluno){
-            console.log(aluno.nota);
+            // console.log(aluno.nota);
         });
 
         //Map
@@ -69,12 +68,37 @@
         for (let i = 0; i < numeros.length; i++) {
             novoArray.push(numeros[i] * 2);
         };
-        console.log(novoArray);
+        // console.log(novoArray);
 
         const array2 = numeros.map(function(numero){
             return numero * 2;
         });
-        console.log(array2);
+        // console.log(array2);
+
+        const novoArray3 = numeros.map(numero => numero * 2);
+        // console.log(novoArray3);
+
+        /* const alunos = [
+            {nome : "Lucas", nota : 9},
+            {nome : "Maria", nota : 10},
+            {nome : "Pedro", nota : 8.5}
+        ]
+        */
+        const alunosNovaNota = alunos.map(aluno => { // Basicamente está refazendo o objeto acima descontando 10% da nota de cada aluno dentro do objeto alunos.
+            return {
+                nome: aluno.nome,
+                nota: aluno.nota * 0.9 // Descontando do Aluno 10% da nota por mau comportamento.
+            }
+        });
+        // console.log(alunosNovaNota);
+
+        // Filter (Filtro dos dados referente a minha condição)
+        const arrayNumeros = [2, 3, 4, 5, 6];
+        const numerosPares = arrayNumeros.filter(numero => numero % 2 === 0); // Será realizado uma filtragem dos valores que são apenas pares
+        console.log(numerosPares);
+
+        const alunosAprovados = alunosNovaNota.filter(aluno => aluno.nota >= 8.0); // Somente o Lucas e Maria devem ser aprovados, pois as suas notas sãos maiores que 8.0
+        console.log(alunosAprovados);
     </script>
 </body>
 </html>
