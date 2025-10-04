@@ -48,6 +48,74 @@
             return n1 * n2; // Return explícito
         }
         // console.log(multiplicar(3, 3)); Resultado = 9
+
+        // Função anônima => Arrow function sem o return
+        const dividir = (n1, n2) => n1 / n2; //Return implícito
+        // console.log(dividir(2, 2)); Resultado = 1
+
+
+        //Função com parêmetro padrão ou opcional
+        function cumprimentar(nome = "Visitante") {
+            console.log(`Olá, ${nome}`);
+        }
+        cumprimentar();
+        cumprimentar("Lucas");
+
+
+        // Função de CallBack (Chamando uma função dentro da outra, uma outra função existente dentro dessa nova criada)
+        function calcular(n1, n2, operacao) {
+            return operacao(n1, n2);
+        } 
+        // console.log(calcular(2, 2, somaRetorno)); Resultado = 2 (Para essas contas serem realizadas é preciso que a função a ser utilizada possua um retorno como padrão)
+        // console.log(calcular(2, 2, multiplicar)); Resultado = 4 (Para essas contas serem realizadas é preciso que a função a ser utilizada possua um retorno como padrão)
+
+
+        // Função assincrona (Via API)
+        async function buscarDadosFeriados() {
+            const resposta = await fetch("https://brasilapi.com.br/api/feriados/v1/2025"); // Recebe a rerquisição de uma API externa e retorna os valores
+            const dados = await resposta.json(); // Converte os daods brutos em JSON
+            console.log(dados);
+        }
+        // buscarDadosFeriados();
+
+        async function buscarCep() {
+            const respostaCep = await fetch("https://brasilapi.com.br/api/cep/v1/19064325"); // Recebe a rerquisição de uma API externa e retorna os valores
+            const dadosCep = await respostaCep.json(); // Converte os daods brutos em JSON
+            console.log(dadosCep);
+        }
+        // buscarCep(); 
+
+        // Exercicio1
+        const calcularArea = (largura, altura) => largura * altura;
+        // console.log(calcularArea(10, 5)); Resultado = 50
+
+        // Exercicio 2
+        function ehPar(valor) {
+            if (valor % 2 === 0) {
+                console.log("É par!");
+            }
+            else {
+                console.log("É ímpar!");
+            }
+        }
+        // console.log(ehPar(2)); Resultado = É par!
+
+        // Método 2 (Exercicio 2)
+        const ehPar2 = (numero) => numero % 2 === 0 ? "É par" : "É ímpar";
+        // console.log(ehPar2(5)); Resultado = É ímpar! 
+
+        // Exercicio 3
+        const celsiusParaFahrenheit = (temperatura) => {
+            const temperaturaConvertida = (temperatura * 9 / 5) + 32;
+            return temperaturaConvertida.toFixed(1);
+        }
+        // console.log(celsiusParaFahrenheit(21)); Resultado = 69.8
+
+        // Método 2
+        const celsiusParaFahrenheit2 = (temperatura) =>
+            (temperaturaConvertida = (temperatura * 9 / 5) + 32).toFixed(1);
+
+        // console.log(celsiusParaFahrenheit(21)); Resultado = 69.8
     </script>
 </body>
 </html>
