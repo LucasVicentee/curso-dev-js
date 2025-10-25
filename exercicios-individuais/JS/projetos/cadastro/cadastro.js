@@ -293,6 +293,23 @@ function inicializar(){
             mostrarDetalhesUsuario(id);
         }       
     })
+
+    modalDetalhes.addEventListener("click", (event) => {
+        const target = event.target.closest("button");
+        if(!target) return
+        
+        const id = Number(target.dataset.id);
+        
+        if (isNaN(id)) return
+
+        if (target.classList.contains("btn-warning")){
+            modal.hide();
+            editarUsuario(id);
+        } else if (target.classList.contains("btn-danger")){
+            modal.hide();
+            excluirUsuario(id);
+        }     
+    })
 }
 
 inicializar();
