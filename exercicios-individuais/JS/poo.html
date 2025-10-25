@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Orientada a Objetos</title>
+</head>
+<body>
+    <script>
+        const conta1 = {titular: "Lucas", saldo: 500, obs: "teste"};
+        const conta2 = {titular: "Sabrina", saldo: 5000};
+
+        const contas = [
+            {titular: "Lucas", saldo: 500},
+            {titular: "Sabrina", saldo: 5000}
+        ]
+
+        function extrato(conta) {
+            console.log(`Titular da conta: ${conta.titular} e o saldo é de: ${conta.saldo}`);
+        }
+
+        extrato(conta1);
+        extrato(conta2);
+
+        contas.forEach(conta => extrato(conta));
+
+        //POO
+        console.log("----------------------------");
+
+        class ContaBancaria {
+            constructor(nomeTitular, saldoConta) {
+                this.nomeTitular = nomeTitular;
+                this.saldoConta = saldoConta;
+            }
+
+            extrato() {
+                console.log(`Titular da conta: ${this.nomeTitular} e o saldo é de: ${this.saldoConta}`);
+            }
+        }
+
+        const contaLucas = new ContaBancaria("Lucas", 500);
+        const contaSabrina = new ContaBancaria("Sabrina", 5000);
+
+        contaLucas.extrato();
+        contaSabrina.extrato();
+    </script>
+</body>
+</html>
