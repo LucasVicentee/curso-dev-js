@@ -31,13 +31,20 @@ const tabelaCorpo = document.querySelector("#user-table-body");
 let idEmEdicao = null;
 
 const btnCep = document.querySelector("#btn-buscar-cep");
-
-
 const inputBusca = document.querySelector("#user-busca");
 
+//Informaçoes do Modal
+const modalDetalhes = document.querySelector("#detalhes-modal");
+const modalNome = document.querySelector("#modal-nome");
+const modalEmail = document.querySelector("#modal-email");
+const modalEndereco = document.querySelector("#modal-endereco-completo");
+const modalObs = document.querySelector("#modal-obs");
 
+// Botões
+const modalBtnEditar = document.querySelector("#modal-btn-editar");
+const modalBtnExcluir = document.querySelector("#modal-btn-excluir");
 
-
+const modal = new bootstrap.Modal(modalDetalhes);
 
 function mostrarTelaLista(){
     telaLista.classList.remove("d-none");
@@ -100,12 +107,13 @@ function renderizarTabela(usuariosFiltrados = usuarios){
                 <button type="button" class="btn btn-sm btn-warning" data-id="${user.id}">Editar</button>
 
                 <button type="button" class="btn btn-sm btn-danger" data-id="${user.id}">Excluir</button>
+
+                <button type="button" class="btn btn-sm btn-primary" data-id="${user.id}">Mostrar Detalhes</button>
             </td>
         `;
 
         tabelaCorpo.appendChild(tr);
     });
-
 }
 
 function excluirUsuario(id){
@@ -234,6 +242,26 @@ function uploadArquivo(event){
     leitor.readAsText(arquivo);
 }
 
+function mostrarDetalhesUsuario(id) {
+    const user = usuarios.find(u => u.id === id);
+
+    if (!user) {
+        return;
+    }
+
+    modalNome.textContent = `${user.nome} ${user.sobrenome}`;
+    modalEmail.textContent = user.email;
+    const endereco = [user.rua, user.numero, user.complemento, user.bairro, user.cidade, user.estado, user.cep].filter(Boolean).join(", ");
+
+    modalEndereco.textContent = endereco;
+    modalObs.textContent = user.obs;
+
+    modalBtnEditar.dataset.id = user.id;
+    modalBtnExcluir.dataset.id = user.id;
+
+    modal.show();
+}
+
 function inicializar(){
     btnAdicionar.addEventListener("click",mostrarTelaCadastro);
     btnVoltarLista.addEventListener("click",mostrarTelaLista);
@@ -260,7 +288,10 @@ function inicializar(){
             editarUsuario(id);
         } else if (target.classList.contains("btn-danger")){
             excluirUsuario(id);
-        }        
+        }
+        else if (target.classList.contains("btn-primary")) {
+            mostrarDetalhesUsuario(id);
+        }       
     })
 }
 
